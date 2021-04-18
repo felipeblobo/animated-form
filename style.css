@@ -3,11 +3,16 @@
 body {
     background-color: #0A6259;
     font-family: 'Gilda Display', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+       
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
 }
 
 
@@ -16,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    padding-bottom: 2.5rem;
 }
 
 
@@ -56,19 +61,6 @@ body {
 
 }
 
-
-/* .treeDiv {
-    display: flex;
-    align-items: flex-end;
-
-}
-
-.tree {
-    width: 80%;
-    height: auto;
-   
-    
-} */
 
 form {
 
@@ -172,6 +164,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 80%;
+    height: 2.5rem; 
     
 }
 
@@ -180,6 +173,11 @@ footer {
 }
 
 
+form.validate-error {
+    animation: nono 200ms linear, showingForm paused;
+    animation-iteration-count: 2;
+
+}
 
 
 
@@ -227,3 +225,91 @@ footer {
         transform: translateX(0)
     }
 }
+
+
+@keyframes nono {
+    0% {
+
+        transform: translateX(0);
+    }
+
+    25% {
+
+        transform: translateX(-15%);
+    }
+
+    50% {
+        transform: translateX(15%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+  
+
+    @keyframes ballKick {
+        from {
+            transform: translateX(0)
+        }
+    
+        50%{
+            transform: translateX(-100%)
+        }
+    
+        to {
+            transform: translateX(0)
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        
+    }
+
+    .titleDiv {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+
+    
+
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    /* celulares */
+
+
+    @keyframes ballKick {
+        from {
+            transform: translateX(0)
+        }
+    
+        50%{
+            transform: translateX(-100%)
+        }
+    
+        to {
+            transform: translateX(0)
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 200px;
+
+        
+    }
+
+    .titleDiv {
+        margin-bottom: 30px;
+        
+    }
+    
+    }
