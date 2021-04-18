@@ -1,19 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lora:wght@400;700&display=swap');
 
 body {
+    background-color: #0A6259;
+    font-family: 'Gilda Display', serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0A6259;
-    font-family: 'Gilda Display', serif;
+   
 }
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.titleDiv {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    margin-top: 30px;
+    
+}
+
+#logo {
+
+    width: 100px;
+    height: auto; 
+    position: absolute;   
+}
+
+
+.gridDivision {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.ballDiv {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+
+}
+
+
+/* .treeDiv {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.tree {
+    width: 80%;
+    height: auto;
+   
+    
+} */
 
 form {
 
     padding: 40px 20px 80px 20px;
     width: 300px;
-    background-color: #BEDD9A;
+    background: linear-gradient(45deg, #87a269 0%, #7bb99c 70%, #a3dac0 100%);
     border-radius: 0.5rem;
     animation: showingForm 2s;
     overflow: hidden;
@@ -32,6 +93,9 @@ h1 {
     color: #FD6F63;
     font-size: 4rem;
     font-family: 'Lora', serif;
+    margin-top: 0;
+    padding-top: 0;
+
 }
 
 .inputElements {
@@ -72,7 +136,7 @@ button {
     height: 30px;
     border-radius: 10px;
     font-family: 'Lora', serif;
-    background-color: #FECE63;
+    background-color: #fdc140;
     letter-spacing: 2px;
     outline: hidden;
 
@@ -82,6 +146,41 @@ button {
 button:active {
     outline: hidden;
   }
+
+button:hover {
+    background-color: #fae635;
+}
+
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fdc140;
+    animation: ballKick infinite 3s;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86)
+}  
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a3dac0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 80%;
+    
+}
+
+.genericText, .city {
+    padding: 0 1rem;
+}
+
+
+
 
 
 @keyframes showingForm {
@@ -113,4 +212,18 @@ button:active {
     to {
         transform: translateY(100vh)
         }
+}
+
+@keyframes ballKick {
+    from {
+        transform: translateX(0)
+    }
+
+    50%{
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
 }
