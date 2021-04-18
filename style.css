@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lora:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A6259;
+    font-family: 'Gilda Display', serif;
+}
+
+form {
+
+    padding: 40px 20px 80px 20px;
+    width: 300px;
+    background-color: #BEDD9A;
+    border-radius: 0.5rem;
+    animation: showingForm;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+   
+   
+}
+
+h1 {
+    text-align: center;
+    color: #FD6F63;
+    font-size: 4rem;
+    font-family: 'Lora', serif;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #182B33;
+    animation: showingInputs;
+    animation-duration: 1s;
+}
+
+
+
+input {
+    margin-top: .3rem;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    animation: showingInputs;
+    animation-duration: 500ms;
+    border: none;
+
+}
+
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+    background-color: #FECE63;
+    letter-spacing: 2px;
+    outline: hidden;
+
+
+}
+
+button:active {
+    outline: hidden;
+}
+
+@keyframes showingForm {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+
+}
+
+@keyframes showingInputs {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        transform: translateX(0)
+    }
+}
