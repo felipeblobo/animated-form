@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lora:wght@400;700&display=swap');
 
 body {
-  background-color: #0a6259;
+  background-color: #020505;
   font-family: 'Gilda Display', serif;
   padding: 0;
   margin: 0;
@@ -59,11 +59,12 @@ body {
 form {
   padding: 40px 20px 80px 20px;
   width: 300px;
-  background: linear-gradient(45deg, #87a269 0%, #7bb99c 70%, #a3dac0 100%);
+  background: linear-gradient(45deg, #2f332a 0%, #395d4c 70%, #397c5d 100%);
   border-radius: 0.5rem;
   animation: showingForm 2s;
   overflow: hidden;
-  box-shadow: 5px 2px 10px 2px #1f1e1e;
+  box-shadow: 2px 2px 10px  #b6b4b4;
+  
 }
 
 .moveDown {
@@ -90,13 +91,14 @@ h1 {
 
 label {
     font-weight: 600;
+    color: #e9e9e9;
 }
 
 input {
   margin-top: 0.3rem;
   width: 100%;
   height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
 }
 
@@ -123,12 +125,12 @@ button {
   background-color: #fdc140;
   letter-spacing: 1.5px;
   font-weight: 600;
-  outline: hidden;
+  outline-style: hidden;
   cursor: pointer;
 }
 
 button:active {
-  outline: hidden;
+  outline-style: hidden;
 }
 
 button:hover {
@@ -162,8 +164,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #c3c2c2;
+  background-color: #2a2525;
   position: absolute;
+  color: #e4e4e4;
   bottom: 0;
   width: 100%;
   font-size: 80%;
